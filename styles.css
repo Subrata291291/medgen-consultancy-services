@@ -498,3 +498,113 @@ h6,
 .swiper-logo-slide:hover {
     opacity: 1;
 }
+
+.consultation-modal .modal-dialog {
+    width: min(100% - 2rem, 760px);
+    max-width: none;
+    margin: 1rem auto;
+}
+
+.consultation-modal-body {
+    padding: clamp(1.25rem, 3.5vw, 2.5rem);
+    max-height: calc(100vh - 8.5rem);
+    overflow-y: auto;
+}
+
+.consultation-modal-intro {
+    max-width: 62ch;
+    margin-bottom: clamp(1.25rem, 3vw, 2rem);
+    line-height: 1.65;
+}
+
+.consultation-form-grid {
+    --bs-gutter-x: clamp(0.75rem, 2vw, 1.25rem);
+    --bs-gutter-y: clamp(1rem, 2vw, 1.35rem);
+}
+
+.consultation-form-grid .form-label {
+    margin-bottom: 0.45rem;
+    font-size: 0.9rem;
+}
+
+.consultation-form-grid .form-control,
+.consultation-form-grid .form-select {
+    min-height: 48px;
+    border-color: rgba(11, 59, 96, 0.2);
+    box-shadow: none;
+}
+
+.consultation-form-grid .form-control::placeholder {
+    font-size: 0.875rem;
+    opacity: 0.7;
+}
+
+.consultation-form-grid .form-select,
+.consultation-form-grid .form-select option {
+    font-size: 0.875rem;
+}
+
+.consultation-form-grid textarea.form-control {
+    min-height: 112px;
+    resize: vertical;
+}
+
+.consultation-form-grid .form-control:focus,
+.consultation-form-grid .form-select:focus {
+    border-color: var(--primary-navy);
+    box-shadow: 0 0 0 0.2rem rgba(11, 59, 96, 0.1);
+}
+
+.consultation-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-top: 0.35rem;
+}
+
+@media (max-width: 575.98px) {
+    .consultation-modal .modal-dialog {
+        width: calc(100% - 1rem);
+        margin: 0.5rem auto;
+    }
+
+    .consultation-modal .modal-content {
+        border-radius: 1rem !important;
+    }
+
+    .consultation-modal .modal-header {
+        padding: 1.15rem 1.25rem !important;
+    }
+
+    .consultation-modal .modal-title {
+        font-size: 1.15rem;
+    }
+
+    .consultation-modal-body {
+        padding: 1.25rem;
+        max-height: calc(100vh - 7.25rem);
+    }
+
+    .consultation-modal-intro {
+        margin-bottom: 1.25rem;
+        line-height: 1.55;
+    }
+
+    .consultation-form-grid .form-control::placeholder {
+        font-size: 0.8125rem;
+    }
+
+    .consultation-form-grid .form-select,
+    .consultation-form-grid .form-select option {
+        font-size: 0.8125rem;
+    }
+
+    .consultation-form-actions {
+        flex-direction: column-reverse;
+        margin-top: 0.25rem;
+    }
+
+    .consultation-form-actions .btn {
+        width: 100%;
+    }
+}
