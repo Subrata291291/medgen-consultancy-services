@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MedGen Consultancy - Medical Billing &amp; Revenue Cycle Management</title>
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Swiper CSS & JS -->
+<link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body data-aos-delay="0" data-aos-duration="400" data-aos-easing="ease">
+<!-- TopNavBar -->
+<div class="site-header position-absolute top-0 start-0 w-100 z-2">
+<div class="container">
+<nav class="navbar navbar-expand-lg bg-transparent border-0 py-3">
+<a class="navbar-brand font-heading fw-bold text-white fs-4" href="#">MedGen Consultancy</a>
+<button aria-controls="mobileNav" class="navbar-toggler border-0 text-white d-lg-none" data-bs-target="#mobileNav" data-bs-toggle="offcanvas" type="button">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="navbarNav">
+<ul class="navbar-nav gap-4 align-items-center">
+<li class="nav-item dropdown position-static">
+<a class="nav-link fw-semibold text-white active border-bottom border-2 border-white" href="#">Services <span class="material-symbols-outlined fs-6">expand_more</span></a>
+<div class="mega-menu backdrop-blur bg-opacity-90 rounded-bottom-4 shadow-lg">
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+<h6 class="text-coral fw-bold mb-3">Front-End RCM</h6>
+<ul class="list-unstyled">
+<li class="mb-2"><a class="text-decoration-none text-dark" href="#"><span class="material-symbols-outlined me-2 fs-6">badge</span>Patient Credentialing</a></li>
+<li class="mb-2"><a class="text-decoration-none text-dark" href="#"><span class="material-symbols-outlined me-2 fs-6">verified_user</span>Eligibility Verification</a></li>
+<li class="mb-2"><a class="text-decoration-none text-dark" href="#"><span class="material-symbols-outlined me-2 fs-6">edit_document</span>Prior Authorization</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<h6 class="text-coral fw-bold mb-3">Core Billing</h6>
+<ul class="list-unstyled">
+<li class="mb-2"><a class="text-decoration-none text-dark" href="#"><span class="material-symbols-outlined me-2 fs-6">medical_information</span>Medical Coding</a></li>
+<li class="mb-2"><a class="text-decoration-none text-dark" href="#"><span class="material-symbols-outlined me-2 fs-6">receipt_long</span>Charge Entry</a></li>
+<li class="mb-2"><a class="text-decoration-none text-dark" href="#"><span class="material-symbols-outlined me-2 fs-6">send</span>Claims Submission</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<h6 class="text-coral fw-bold mb-3">Revenue Recovery</h6>
+<ul class="list-unstyled">
+<li class="mb-2"><a class="text-decoration-none text-dark" href="#"><span class="material-symbols-outlined me-2 fs-6">account_balance_wallet</span>Payment Posting</a></li>
+<li class="mb-2"><a class="text-decoration-none text-dark" href="#"><span class="material-symbols-outlined me-2 fs-6">warning</span>Denial Management</a></li>
+<li class="mb-2"><a class="text-decoration-none text-dark" href="#"><span class="material-symbols-outlined me-2 fs-6">call</span>AR Follow-up</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item dropdown position-static">
+<a class="nav-link fw-semibold text-white text-opacity-75" href="#">Specialties <span class="material-symbols-outlined fs-6">expand_more</span></a>
+<div class="mega-menu backdrop-blur bg-opacity-90 rounded-bottom-4 shadow-lg">
+<div class="container">
+<h6 class="text-coral fw-bold mb-3">We Serve 30+ Specialties</h6>
+<div class="row row-cols-2 row-cols-md-4 g-3">
+<div class="col"><a class="text-decoration-none text-dark" href="#">Cardiology</a></div>
+<div class="col"><a class="text-decoration-none text-dark" href="#">Dermatology</a></div>
+<div class="col"><a class="text-decoration-none text-dark" href="#">Internal Medicine</a></div>
+<div class="col"><a class="text-decoration-none text-dark" href="#">Orthopedics</a></div>
+<div class="col"><a class="text-decoration-none text-dark" href="#">Pediatrics</a></div>
+<div class="col"><a class="text-decoration-none text-dark" href="#">Radiology</a></div>
+<div class="col"><a class="text-decoration-none text-dark" href="#">Urology</a></div>
+<div class="col"><a class="text-decoration-none text-coral fw-bold" href="#">View All â†’</a></div>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item"><a class="nav-link fw-semibold text-white text-opacity-75" href="#">Solutions</a></li>
+<li class="nav-item"><a class="nav-link fw-semibold text-white text-opacity-75" href="#">Why Us</a></li>
+<li class="nav-item"><a class="nav-link fw-semibold text-white text-opacity-75" href="#">Resources</a></li>
+<li class="nav-item"><a class="nav-link fw-semibold text-white text-opacity-75" href="#">About</a></li>
+</ul>
+</div>
+<div class="d-none d-lg-block">
+<button class="btn btn-coral fw-semibold px-4 py-2 rounded-3 shadow-sm">Get Free Billing Audit</button>
+</div>
+</nav>
+</div>
+</div>
+<aside aria-labelledby="mobileNavLabel" class="offcanvas offcanvas-end mobile-offcanvas d-lg-none" id="mobileNav" tabindex="-1">
+<div class="offcanvas-header">
+<div>
+<div class="mobile-menu-eyebrow mb-2">MedGen Consultancy</div>
+<h2 class="h4 mb-0 text-white" id="mobileNavLabel">Navigate your growth</h2>
+</div>
+<button aria-label="Close menu" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" type="button"></button>
+</div>
+<div class="offcanvas-body">
+<div class="accordion accordion-flush" id="mobileMenuAccordion">
+<div class="accordion-item bg-transparent border-0">
+<h3 class="accordion-header">
+<button aria-controls="mobileServices" aria-expanded="false" class="mobile-menu-toggle collapsed" data-bs-target="#mobileServices" data-bs-toggle="collapse" type="button">Services <span class="material-symbols-outlined fs-5">expand_more</span></button>
+</h3>
+<div class="accordion-collapse collapse" data-bs-parent="#mobileMenuAccordion" id="mobileServices">
+<div class="mobile-menu-list">
+<a href="#">Patient Credentialing</a>
+<a href="#">Eligibility Verification</a>
+<a href="#">Prior Authorization</a>
+<a href="#">Medical Coding</a>
+<a href="#">Claims Submission</a>
+<a href="#">Denial Management</a>
+</div>
+</div>
+</div>
+<div class="accordion-item bg-transparent border-0">
+<h3 class="accordion-header">
+<button aria-controls="mobileSpecialties" aria-expanded="false" class="mobile-menu-toggle collapsed" data-bs-target="#mobileSpecialties" data-bs-toggle="collapse" type="button">Specialties <span class="material-symbols-outlined fs-5">expand_more</span></button>
+</h3>
+<div class="accordion-collapse collapse" data-bs-parent="#mobileMenuAccordion" id="mobileSpecialties">
+<div class="mobile-menu-list">
+<a href="#">Cardiology</a>
+<a href="#">Dermatology</a>
+<a href="#">Internal Medicine</a>
+<a href="#">Orthopedics</a>
+<a class="text-coral fw-bold" href="#">View All Specialties</a>
+</div>
+</div>
+</div>
+</div>
+<nav aria-label="Mobile navigation" class="mt-1">
+<a class="mobile-nav-link" href="#">Solutions</a>
+<a class="mobile-nav-link" href="#">Why Us</a>
+<a class="mobile-nav-link" href="#">Resources</a>
+<a class="mobile-nav-link" href="#">About</a>
+</nav>
+<div class="mt-4 p-3 rounded-3 bg-white shadow-sm">
+<div class="mobile-menu-eyebrow mb-2">Ready to improve collections?</div>
+<p class="small text-secondary mb-3">See where your billing workflow can recover more revenue.</p>
+<button class="btn btn-coral w-100 fw-semibold rounded-3" data-bs-dismiss="offcanvas" type="button">Get Free Billing Audit</button>
+</div>
+</div>
+</aside>
+<!-- Hero Section -->
+<header class="hero-section position-relative d-flex align-items-center" style="min-height: 800px; padding-top: 100px;"><div class="position-absolute top-0 start-0 w-100 h-100 z-0"><div class="w-100 h-100" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTrr8qUBg0Cc5qYjz3uDBOWjajXIBseSiH05XD-NUikxmVrSN9UJvMlpBgb62jlPnA9gXdvKgmlBnRu3l8sUlU_Q4tz5EeWkI0YmUpO9VWdS3UT6joOZ-igne1KE99iOOEMEAI0tQD8MPBmV-p1Ko9pvXMJ7x4G4pMCZlFIf1byO8ekUZMrnrtPc_o19oXxJEah9AqZq9oF5ouXoeIkhVBYu0ebWXx8DjzxJeVDkPDQnVoEXwUUD4'); background-size: cover; background-position: center;"></div><div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(90deg, rgba(0,37,65,0.9) 0%, rgba(0,37,65,0.7) 50%, rgba(0,37,65,0.4) 100%);"></div></div><div class="container position-relative z-1"><div class="row align-items-center g-5"><div class="col-lg-7 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000"><span class="badge bg-white bg-opacity-10 text-white border border-white border-opacity-25 rounded-pill px-3 py-2 mb-4 text-uppercase tracking-wider fw-semibold">Revenue Cycle Management</span><h1 class="display-4 fw-bold text-white mb-4 font-heading lh-sm">Turn Your Medical Billing Into a <span class="text-coral">Growth Engine</span></h1><p class="fs-5 text-white text-opacity-75 mb-5" style="max-width: 600px;">Maximize collections through strong intake, cleaner claims, fixing denials at the source, and stronger revenue protection at lower costs.</p><div class="d-flex flex-wrap gap-3"><button class="btn btn-coral px-4 py-3 rounded-3 fw-semibold shadow-sm">Get Free Billing Audit</button><button class="btn btn-outline-light px-4 py-3 rounded-3 fw-semibold shadow-sm">Talk to an RCM Expert</button></div></div><div class="col-lg-5 d-none d-lg-block aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"><div class="card border-0 shadow-lg bg-white bg-opacity-90 backdrop-blur rounded-4 p-4 p-xl-5"><h3 class="h4 text-primary-navy mb-4 border-bottom pb-3 font-heading fw-bold">Performance Metrics</h3><ul class="list-unstyled mb-0 d-flex flex-column gap-4"><li class="d-flex justify-content-between align-items-center"><div class="d-flex align-items-center gap-2 text-primary-navy"><span class="material-symbols-outlined text-coral">check_circle</span><span class="fw-medium">Clean Claim Rate</span></div><span class="h4 mb-0 text-primary-navy fw-bold">97%</span></li><li class="d-flex justify-content-between align-items-center"><div class="d-flex align-items-center gap-2 text-primary-navy"><span class="material-symbols-outlined text-coral">trending_down</span><span class="fw-medium">Denial Rate</span></div><span class="h4 mb-0 text-primary-navy fw-bold">&lt;3%</span></li><li class="d-flex justify-content-between align-items-center"><div class="d-flex align-items-center gap-2 text-primary-navy"><span class="material-symbols-outlined text-coral">speed</span><span class="fw-medium">Faster Reimbursement</span></div><span class="h4 mb-0 text-primary-navy fw-bold">30%</span></li></ul></div></div></div></div></header>
+<!-- Metrics Bar -->
+<section class="metrics-section position-relative z-2" style="margin-top: -50px;">
+<div class="container">
+<div class="card border-0 shadow bg-white rounded-4 p-4">
+<div class="metrics-grid text-center">
+<div class="metrics-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+<div class="h2 fw-bold text-primary-navy mb-1">15-20%</div>
+<div class="small text-muted text-uppercase fw-semibold">Cost Savings</div>
+</div>
+<div class="metrics-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="200">
+<div class="h2 fw-bold text-primary-navy mb-1">97%</div>
+<div class="small text-muted text-uppercase fw-semibold">Clean Claim Rate</div>
+</div>
+<div class="metrics-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="300">
+<div class="h2 fw-bold text-primary-navy mb-1">&lt;3%</div>
+<div class="small text-muted text-uppercase fw-semibold">Denial Rate</div>
+</div>
+<div class="metrics-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="400">
+<div class="h2 fw-bold text-primary-navy mb-1">96%</div>
+<div class="small text-muted text-uppercase fw-semibold">Net Collection</div>
+</div>
+<div class="metrics-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="500">
+<div class="h2 fw-bold text-primary-navy mb-1">&lt;1%</div>
+<div class="small text-muted text-uppercase fw-semibold">Write Offs</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technology / EHR Integration -->
+<section class="integrations-section py-5 border-bottom">
+<div class="container text-center">
+<p class="text-muted fw-semibold mt-4 mb-4 text-uppercase tracking-wider" data-aos="fade-down">Seamlessly integrating with major EHR platforms</p>
+<!-- Swiper -->
+<div class="swiper ehrSwiper py-3 swiper-initialized swiper-horizontal swiper-backface-hidden" data-aos="fade-up" data-aos-delay="150">
+<div aria-live="off" class="swiper-wrapper align-items-center" id="swiper-wrapper-1e276a3d458d53ad" style="transition-duration: 0ms; transform: translate3d(-458.4px, 0px, 0px); transition-delay: 0ms;">
+<div aria-label="1 / 7" class="swiper-slide swiper-logo-slide" data-swiper-slide-index="0" role="group" style="width: 199.2px; margin-right: 30px;">Epic</div>
+<div aria-label="2 / 7" class="swiper-slide swiper-logo-slide swiper-slide-prev" data-swiper-slide-index="1" role="group" style="width: 199.2px; margin-right: 30px;">Cerner</div>
+<div aria-label="3 / 7" class="swiper-slide swiper-logo-slide swiper-slide-active" data-swiper-slide-index="2" role="group" style="width: 199.2px; margin-right: 30px;">Athenahealth</div>
+<div aria-label="4 / 7" class="swiper-slide swiper-logo-slide swiper-slide-next" data-swiper-slide-index="3" role="group" style="width: 199.2px; margin-right: 30px;">eClinicalWorks</div>
+<div aria-label="5 / 7" class="swiper-slide swiper-logo-slide" data-swiper-slide-index="4" role="group" style="width: 199.2px; margin-right: 30px;">NextGen</div>
+<div aria-label="6 / 7" class="swiper-slide swiper-logo-slide" data-swiper-slide-index="5" role="group" style="width: 199.2px; margin-right: 30px;">Kareo</div>
+<div aria-label="7 / 7" class="swiper-slide swiper-logo-slide" data-swiper-slide-index="6" role="group" style="width: 199.2px; margin-right: 30px;">AdvancedMD</div>
+</div>
+<span aria-atomic="true" aria-live="assertive" class="swiper-notification"></span></div>
+</div>
+</section>
+<!-- RCM Process / Workflow -->
+<section class="workflow-section section-padding bg-light">
+<div class="container">
+<div class="text-center mb-5 aos-init aos-animate" data-aos="fade-in">
+<h6 class="text-coral fw-bold text-uppercase tracking-wider mb-2">Streamlined Workflow</h6>
+<h2 class="font-heading fw-bold text-primary-navy">We Simplify Billing So Your Practice Gets Paid Faster</h2>
+</div>
+<div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 justify-content-center">
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+<div class="workflow-card">
+<div class="workflow-icon"><span class="material-symbols-outlined fs-2">person_add</span></div>
+<h6 class="fw-bold text-primary-navy mb-0">Patient Reg</h6>
+</div>
+</div>
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+<div class="workflow-card">
+<div class="workflow-icon"><span class="material-symbols-outlined fs-2">verified_user</span></div>
+<h6 class="fw-bold text-primary-navy mb-0">Eligibility</h6>
+</div>
+</div>
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+<div class="workflow-card">
+<div class="workflow-icon"><span class="material-symbols-outlined fs-2">edit_document</span></div>
+<h6 class="fw-bold text-primary-navy mb-0">Prior Auth</h6>
+</div>
+</div>
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+<div class="workflow-card">
+<div class="workflow-icon"><span class="material-symbols-outlined fs-2">medical_information</span></div>
+<h6 class="fw-bold text-primary-navy mb-0">Coding</h6>
+</div>
+</div>
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+<div class="workflow-card">
+<div class="workflow-icon"><span class="material-symbols-outlined fs-2">receipt_long</span></div>
+<h6 class="fw-bold text-primary-navy mb-0">Charge Entry</h6>
+</div>
+</div>
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
+<div class="workflow-card">
+<div class="workflow-icon"><span class="material-symbols-outlined fs-2">send</span></div>
+<h6 class="fw-bold text-primary-navy mb-0">Submission</h6>
+</div>
+</div>
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="700">
+<div class="workflow-card">
+<div class="workflow-icon"><span class="material-symbols-outlined fs-2">account_balance_wallet</span></div>
+<h6 class="fw-bold text-primary-navy mb-0">Posting</h6>
+</div>
+</div>
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="800">
+<div class="workflow-card">
+<div class="workflow-icon"><span class="material-symbols-outlined fs-2">warning</span></div>
+<h6 class="fw-bold text-primary-navy mb-0">Denial Mgmt</h6>
+</div>
+</div>
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="900">
+<div class="workflow-card">
+<div class="workflow-icon"><span class="material-symbols-outlined fs-2">call</span></div>
+<h6 class="fw-bold text-primary-navy mb-0">AR Follow-up</h6>
+</div>
+</div>
+</div>
+<div class="text-center mt-5 aos-init aos-animate" data-aos="fade-up">
+<button class="btn btn-coral px-4 py-2 rounded-3 fw-semibold shadow-sm">View All Solutions</button>
+</div>
+</div>
+</section>
+<!-- Specialties Section -->
+<section class="specialties-section section-padding bg-white">
+<div class="container text-center">
+<div class="aos-init aos-animate" data-aos="fade-in">
+<h6 class="text-coral fw-bold text-uppercase tracking-wider mb-2">Our Key Domain Areas</h6>
+<h2 class="font-heading fw-bold text-primary-navy mb-5">Expertise in 35+ Specialties</h2>
+</div>
+<div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-4 justify-content-center mb-5">
+<!-- Specialty Items -->
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+<div class="text-center p-3 card-hover">
+<span class="material-symbols-outlined text-coral fs-1 mb-2">monitor_heart</span>
+<div class="fw-semibold small">EMS</div>
+</div>
+</div>
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+<div class="text-center p-3 card-hover">
+<span class="material-symbols-outlined text-primary-navy fs-1 mb-2">bed</span>
+<div class="fw-semibold small">Sleep Study</div>
+</div>
+</div>
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+<div class="text-center p-3 card-hover">
+<span class="material-symbols-outlined text-coral fs-1 mb-2">favorite</span>
+<div class="fw-semibold small">Cardiology</div>
+</div>
+</div>
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+<div class="text-center p-3 card-hover">
+<span class="material-symbols-outlined text-primary-navy fs-1 mb-2">radiology</span>
+<div class="fw-semibold small">Radiology</div>
+</div>
+</div>
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+<div class="text-center p-3 card-hover">
+<span class="material-symbols-outlined text-coral fs-1 mb-2">local_hospital</span>
+<div class="fw-semibold small">Urgent Care</div>
+</div>
+</div>
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
+<div class="text-center p-3 card-hover">
+<span class="material-symbols-outlined text-primary-navy fs-1 mb-2">masks</span>
+<div class="fw-semibold small">Dermatology</div>
+</div>
+</div>
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="700">
+<div class="text-center p-3 card-hover">
+<span class="material-symbols-outlined text-coral fs-1 mb-2">psychiatry</span>
+<div class="fw-semibold small">Pain Management</div>
+</div>
+</div>
+<div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="800">
+<div class="text-center p-3 card-hover">
+<span class="material-symbols-outlined text-primary-navy fs-1 mb-2">gastroenterology</span>
+<div class="fw-semibold small">Gastroenterology</div>
+</div>
+</div>
+</div>
+<button class="btn btn-coral px-4 py-2 rounded-3 fw-semibold shadow-sm aos-init aos-animate" data-aos="fade-up">View All Specialties</button>
+</div>
+</section>
+<!-- Outcomes / Statistics -->
+<section class="outcomes-section section-padding bg-light">
+<div class="container">
+<div class="row align-items-center g-5">
+<div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
+<div class="d-flex justify-content-center">
+<div class="donut-chart-container shadow-sm" data-aos="zoom-in" data-aos-duration="900">
+<div class="donut-inner">
+<span class="display-5 fw-bold text-primary-navy" data-count-to="86">0%</span>
+<span class="small text-muted fw-semibold text-center mt-1">Faster Claim<br/>Approval</span>
+</div>
+</div>
+</div>
+<div class="d-flex justify-content-center gap-4 mt-4 text-sm fw-semibold">
+<div class="d-flex align-items-center gap-2"><span class="d-inline-block rounded-circle bg-primary-navy" style="width:10px; height:10px;"></span> Assured Prior Auth Approval</div>
+<div class="d-flex align-items-center gap-2"><span class="d-inline-block rounded-circle bg-light border border-secondary" style="width:10px; height:10px;"></span> Increase Clean Claim Rate</div>
+</div>
+</div>
+<div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+<h6 class="text-coral fw-bold text-uppercase tracking-wider mb-2">Our Niche - Prior Authorization</h6>
+<h2 class="font-heading fw-bold text-primary-navy mb-4">Get Same day Approvals with End-to-End Prior Authorization Support</h2>
+<p class="text-secondary mb-4">Prior authorization doesn't have to be a bottleneck. From intake up to the follow-through and approval, securing supporting documentation, denial management, and follow-ups, our team handles every step seamlessly and offers pre-authorization checks. We secure instant approvals for labs, imaging, and sleep testing, allowing you to proceed with confidence, quality, and convenience.</p>
+<button class="btn btn-outline-navy px-4 py-2 rounded-3 fw-semibold" type="button" data-bs-toggle="modal" data-bs-target="#freeConsultationModal">Book a Free Consultation</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Case Study / Performance -->
+<section class="case-study-section py-5">
+<div class="container">
+<div class="card border-0 shadow-lg rounded-4 overflow-hidden aos-init aos-animate" data-aos="fade-up">
+<div class="row g-0">
+<div class="col-md-6 bg-dark text-white p-5 d-flex flex-column justify-content-center" style="background: linear-gradient(rgba(11, 59, 96, 0.9), rgba(11, 59, 96, 0.9)), url('https://images.unsplash.com/photo-1576091160550-2173ff9e5ee5?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80') center/cover;">
+<h6 class="text-coral fw-bold text-uppercase tracking-wider mb-3">Case Study for Sleep Lab Collections</h6>
+<h2 class="font-heading fw-bold mb-4">Streamline Billing, Reduce Denials, and Increase Revenue</h2>
+<div class="d-flex flex-wrap gap-3 mt-3">
+<button class="btn btn-coral px-4 py-2 rounded-3 fw-semibold" type="button" data-bs-toggle="modal" data-bs-target="#freeConsultationModal">Book a Free Consultation</button>
+<button class="btn btn-outline-light px-4 py-2 rounded-3 fw-semibold">Get Free Billing Audit</button>
+</div>
+</div>
+<div class="col-md-6 bg-light p-5">
+<div class="row g-4 h-100 align-items-center">
+<div class="col-6 aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+<h4 class="text-coral fw-bold display-6 mb-1">30%</h4>
+<p class="text-muted fw-semibold small mb-0">Increase in Collections</p>
+</div>
+<div class="col-6 aos-init aos-animate" data-aos="fade-in" data-aos-delay="200">
+<h4 class="text-coral fw-bold display-6 mb-1">45%</h4>
+<p class="text-muted fw-semibold small mb-0">Reduction in AR Days</p>
+</div>
+<div class="col-6 aos-init aos-animate" data-aos="fade-in" data-aos-delay="300">
+<h4 class="text-coral fw-bold display-6 mb-1">98%</h4>
+<p class="text-muted fw-semibold small mb-0">Clean Claim Rate</p>
+</div>
+<div class="col-6 aos-init aos-animate" data-aos="fade-in" data-aos-delay="400">
+<h4 class="text-coral fw-bold display-6 mb-1">&lt;2%</h4>
+<p class="text-muted fw-semibold small mb-0">Denial Rate</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="faq-section section-padding bg-white">
+<div class="container">
+<div class="row g-5">
+<div class="col-lg-4 aos-init aos-animate" data-aos="fade-in">
+<h6 class="text-coral fw-bold text-uppercase tracking-wider mb-2">FAQs</h6>
+<h2 class="font-heading fw-bold text-primary-navy mb-4">Frequently Asked Questions</h2>
+<button class="btn btn-coral px-4 py-2 rounded-3 fw-semibold shadow-sm">View All FAQs</button>
+</div>
+<div class="col-lg-8 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+<div class="accordion accordion-flush" id="accordionFAQ">
+<div class="accordion-item border-bottom mb-3 border-0">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed fw-bold text-primary-navy fs-5 bg-transparent px-0" data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">
+                Can you integrate with our EHR and existing workflow?
+              </button>
+</h2>
+<div class="accordion-collapse collapse" data-bs-parent="#accordionFAQ" id="collapseOne">
+<div class="accordion-body text-secondary px-0 pb-4">
+                Yes. We work in your EHR/PM system, utilizing it the way you do. You retain full visibility and control over your accounts, with full access to daily reporting and updates.
+              </div>
+</div>
+</div>
+<div class="accordion-item border-bottom mb-3 border-0">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed fw-bold text-primary-navy fs-5 bg-transparent px-0" data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">
+                Are there any hidden charges or binding contracts?
+              </button>
+</h2>
+<div class="accordion-collapse collapse" data-bs-parent="#accordionFAQ" id="collapseTwo">
+<div class="accordion-body text-secondary px-0 pb-4">
+                No hidden fees. We offer transparent pricing models and flexible contracts tailored to your practice's specific needs and volume.
+              </div>
+</div>
+</div>
+<div class="accordion-item border-0">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed fw-bold text-primary-navy fs-5 bg-transparent px-0" data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">
+                What makes your RCM services different?
+              </button>
+</h2>
+<div class="accordion-collapse collapse" data-bs-parent="#accordionFAQ" id="collapseThree">
+<div class="accordion-body text-secondary px-0 pb-4">
+                Our approach combines certified expertise with a proprietary denial prevention framework, ensuring claims are clean before submission and aggressive follow-up on any exceptions.
+              </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog / Insights -->
+<section class="insights-section section-padding bg-light overflow-hidden">
+<div class="container">
+<div class="text-center mb-5 aos-init aos-animate" data-aos="fade-in">
+<h6 class="text-coral fw-bold text-uppercase tracking-wider mb-2">Latest from Blog &amp; Knowledge Center</h6>
+<h2 class="font-heading fw-bold text-primary-navy">Stay Informed with Expert Articles, Trends &amp; Strategies</h2>
+</div>
+<div class="swiper blogSwiper py-3 aos-init aos-animate" data-aos="fade-up">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-hover">
+<div class="overflow-hidden" style="height: 200px;"><img alt="Blog Image 1" class="w-100 h-100 object-fit-cover transition-all duration-300 hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLsu_glYjTwgrD-cK-x8JWV5K6crFTfa4PtwEGoM8yVavQ03_4kpA9WRCPBNA_r1OCU4Jy7UAxeGE9v6vYrNzQmkM7i1qRmjGahMcvOHe1hSgrU70O0R3Jg0rF6hTACSB115H_Vuh-DsgG73Z6YyknIfciMlwcTdVmiAPlCKgtKHqKZBAvEQWw6zlqjiGGexOISK6je-NDMGlrzuSOf9hu8zewHg9rTnFDf7XE9GxgZXeG2TQRXcOyYsAA"/></div>
+<div class="card-body p-4">
+<p class="text-coral small fw-bold mb-2">August 24, 2023</p>
+<h5 class="font-heading fw-bold text-primary-navy mb-3">Virtual Medical Assistant Services for Gastroenterology: Healing More Than You Can</h5>
+<a class="text-coral text-decoration-none fw-semibold small" href="#">View Details â†’</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-hover">
+<div class="overflow-hidden" style="height: 200px;"><img alt="Blog Image 2" class="w-100 h-100 object-fit-cover transition-all duration-300 hover:scale-110" src="https://lh3.googleusercontent.com/aida/AEtjO1XQgCDweCEODkx2d-2OiJN_QulD1-R-dp-m8aXnNYYczl4aF1G1xCT1m2bbaW-PEiJ-aA0SVl0hTmQvsCNgzmQM9mv8FocLbC_krDFoYTcacyODMAKF-GuVFM4C5MiVKYs2ofoJFwqbkv4Lhp5iaZWKVJPcwmVYmBoAndtzPO2D1g3YXKIUAD8TnFRtW9Ji1RSIzgPLHAc14GFPcxx1RHbURMwXXVFrAjY6AM_WhBN6e9k2jKOD484G0g"/></div>
+<div class="card-body p-4">
+<p class="text-coral small fw-bold mb-2">August 15, 2023</p>
+<h5 class="font-heading fw-bold text-primary-navy mb-3">Prior Authorization Services: Compliance Walls That Collapse Oncology Billing</h5>
+<a class="text-coral text-decoration-none fw-semibold small" href="#">View Details â†’</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-hover">
+<div class="overflow-hidden" style="height: 200px;"><img alt="Blog Image 3" class="w-100 h-100 object-fit-cover transition-all duration-300 hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLtUnb9oWYlZE3TbS8WaYab3DIfdK05-fCw8LvqoFOhxmOp2ORxHCMD7JSBHnGW8xZLgv8knMXvKpqu8Am_IJwYChZJ_QWb8BPl8CxEs_JEeAoL3FypsWwVCiVSyTDBhmA_yD-sR9ni7koDcOr5zQHZGO0Sn81UOqCmF6EbMdu_lVO-DrKUIMcNW6TyxDfQmPj9isWpjF8tBdlacXq3_RnFOt6YhQ9jtvxx67Xj7jNLAhxw7XV4-yKly"/></div>
+<div class="card-body p-4">
+<p class="text-coral small fw-bold mb-2">August 02, 2023</p>
+<h5 class="font-heading fw-bold text-primary-navy mb-3">Accounts Receivable Follow-up: Why PT Practices Bleed Cash at 90 Days</h5>
+<a class="text-coral text-decoration-none fw-semibold small" href="#">View Details â†’</a>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-pagination position-static mt-4"></div>
+</div>
+</div>
+</section>
+<!-- Final CTA Banner -->
+<section class="cta-section py-5">
+<div class="container">
+<div class="card border-0 rounded-4 overflow-hidden cta-banner position-relative p-5 text-center text-lg-start aos-init aos-animate" data-aos="fade-up">
+<div class="cta-image-overlay"></div>
+<div class="row align-items-center position-relative z-1">
+<div class="col-lg-8 mb-4 mb-lg-0 cta-content">
+<div class="cta-kicker mb-3">A stronger financial future</div>
+<h2 class="cta-title font-heading fw-bold text-white display-6 mb-3">Ready to Transform Your Revenue Cycle &amp; Accelerate Cash Flow Now?</h2>
+<p class="cta-copy mb-0">Get a clear view of missed revenue opportunities and a practical plan to improve collections.</p>
+</div>
+<div class="col-lg-4 text-lg-end cta-actions">
+<button class="btn btn-light text-coral px-4 py-3 rounded-3 fw-bold shadow-sm" type="button" data-bs-toggle="modal" data-bs-target="#freeConsultationModal"><span class="material-symbols-outlined fs-5">calendar_month</span>Book a Free Consultation</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us (Dark Section) -->
+<section class="why-choose-section section-padding bg-light border-top border-bottom">
+<div class="container">
+<div class="row align-items-center g-5">
+<div class="col-lg-6 aos-init aos-animate" data-aos="fade-in">
+<h2 class="font-heading fw-bold text-primary-navy mb-4">Why Choose MedGen Consultancy?</h2>
+<p class="text-secondary mb-5">We combine deep industry expertise with advanced technology to deliver unparalleled results for your practice.</p>
+<div class="row g-4">
+<div class="col-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+<div class="card border-0 shadow-sm rounded-4 p-4 card-hover">
+<div class="d-flex align-items-start gap-3">
+<div class="bg-coral p-3 rounded-circle text-white d-flex align-items-center justify-content-center" style="width: 56px; height: 56px;">
+<span class="material-symbols-outlined fs-4">verified</span>
+</div>
+<div>
+<h5 class="fw-bold text-primary-navy mb-1">Certified Experts</h5>
+<p class="text-muted small mb-0">AAPC and AHIMA certified coders with decades of collective experience.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+<div class="card border-0 shadow-sm rounded-4 p-4 card-hover">
+<div class="d-flex align-items-start gap-3">
+<div class="bg-coral p-3 rounded-circle text-white d-flex align-items-center justify-content-center" style="width: 56px; height: 56px;">
+<span class="material-symbols-outlined fs-4">gpp_good</span>
+</div>
+<div>
+<h5 class="fw-bold text-primary-navy mb-1">100% Compliant</h5>
+<p class="text-muted small mb-0">HIPAA, SOC2, and ISO certified operations ensuring data integrity.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+<div class="card border-0 shadow-sm rounded-4 p-4 card-hover">
+<div class="d-flex align-items-center justify-content-between">
+<div>
+<h3 class="fw-bold text-coral mb-0">98%</h3>
+<p class="fw-semibold text-primary-navy mb-0">Average Client Retention Rate</p>
+</div>
+<span class="material-symbols-outlined text-primary-navy opacity-25 fs-1">groups</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 aos-init aos-animate" data-aos="fade-left">
+<div class="rounded-4 overflow-hidden shadow-lg">
+<img alt="Healthcare Team" class="w-100 h-100 object-fit-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsu_glYjTwgrD-cK-x8JWV5K6crFTfa4PtwEGoM8yVavQ03_4kpA9WRCPBNA_r1OCU4Jy7UAxeGE9v6vYrNzQmkM7i1qRmjGahMcvOHe1hSgrU70O0R3Jg0rF6hTACSB115H_Vuh-DsgG73Z6YyknIfciMlwcTdVmiAPlCKgtKHqKZBAvEQWw6zlqjiGGexOISK6je-NDMGlrzuSOf9hu8zewHg9rTnFDf7XE9GxgZXeG2TQRXcOyYsAA" style="min-height: 450px;"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="site-footer bg-dark-section pt-5 pb-4 border-top border-secondary border-opacity-25">
+<div class="container">
+<div class="row g-4 mb-5">
+<div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+<div class="h3 font-heading fw-bold text-white mb-3">MedGen Consultancy</div>
+<p class="text-light text-opacity-75 small mb-4">Expert Billing Solutions ensuring cleaner claims and stronger revenue protection for modern healthcare practices.</p>
+<div class="d-flex gap-3 mb-4">
+<div class="bg-white bg-opacity-10 rounded p-2 text-center border border-white border-opacity-10" style="width: 70px;">
+<span class="d-block text-white opacity-75" style="font-size: 10px; line-height: 1.2;">HIPAA<br/>Compliant</span>
+</div>
+<div class="bg-white bg-opacity-10 rounded p-2 text-center border border-white border-opacity-10" style="width: 70px;">
+<span class="d-block text-white opacity-75" style="font-size: 10px; line-height: 1.2;">SOC2<br/>Certified</span>
+</div>
+<div class="bg-white bg-opacity-10 rounded p-2 text-center border border-white border-opacity-10" style="width: 70px;">
+<span class="d-block text-white opacity-75" style="font-size: 10px; line-height: 1.2;">ISO<br/>27001</span>
+</div>
+</div>
+<div class="d-flex gap-2 text-coral">
+<span class="material-symbols-outlined">share</span>
+<!-- Social icons placeholder -->
+</div>
+</div>
+<div class="col-lg-2 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+<h5 class="text-white fw-semibold mb-3 fs-6">Services</h5>
+<ul class="list-unstyled d-flex flex-column gap-2 small">
+<li class=""><a class="text-light text-opacity-75 text-decoration-none custom-hover" href="#">Medical Coding</a></li>
+<li class=""><a class="text-light text-opacity-75 text-decoration-none custom-hover" href="#">Billing &amp; Claims</a></li>
+<li class=""><a class="text-light text-opacity-75 text-decoration-none custom-hover" href="#">Denial Management</a></li>
+<li class=""><a class="text-light text-opacity-75 text-decoration-none custom-hover" href="#">AR Recovery</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+<h5 class="text-white fw-semibold mb-3 fs-6">Company</h5>
+<ul class="list-unstyled d-flex flex-column gap-2 small">
+<li class=""><a class="text-light text-opacity-75 text-decoration-none custom-hover" href="#">About Us</a></li>
+<li class=""><a class="text-light text-opacity-75 text-decoration-none custom-hover" href="#">Careers</a></li>
+<li class=""><a class="text-light text-opacity-75 text-decoration-none custom-hover" href="#">Contact</a></li>
+<li class=""><a class="text-light text-opacity-75 text-decoration-none custom-hover" href="#">Blog</a></li>
+</ul>
+</div>
+<div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+<h5 class="text-white fw-semibold mb-3 fs-6">Subscribe to Insights</h5>
+<p class="text-light text-opacity-75 small mb-3">Get the latest RCM tips and industry updates.</p>
+<div class="input-group mb-3">
+<input aria-label="Email address" class="form-control bg-transparent text-white border-secondary" placeholder="Email address" type="email"/>
+<button class="btn btn-coral" type="button">Subscribe</button>
+</div>
+</div>
+</div>
+<div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 border-top border-white border-opacity-10 small text-light text-opacity-50 aos-init aos-animate" data-aos="fade-in">
+<span class="mb-2 mb-md-0">Â© 2024 MedGen Consultancy. All Rights Reserved.</span>
+<div class="d-flex gap-3">
+<a class="text-light text-opacity-50 text-decoration-none" href="#">Privacy Policy</a>
+<a class="text-light text-opacity-50 text-decoration-none" href="#">Terms of Service</a>
+<a class="text-light text-opacity-50 text-decoration-none" href="#">Security</a>
+</div>
+</div>
+</div>
+</footer>
+
+<div aria-hidden="true" aria-labelledby="freeConsultationModalLabel" class="modal fade" id="freeConsultationModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded-4 overflow-hidden shadow-lg">
+      <div class="modal-header border-0 bg-primary-navy text-white px-4 py-3">
+        <div>
+          <p class="text-uppercase small fw-semibold text-white-50 mb-1">Free Consultation</p>
+          <h2 class="modal-title h4 mb-0" id="freeConsultationModalLabel">Book a Free Consultation</h2>
+        </div>
+        <button aria-label="Close" class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
+      </div>
+      <div class="modal-body p-4 p-md-5">
+        <p class="text-secondary mb-4">Share a few details and our team will reach out to understand your billing challenges and recommend the best solutions for your practice.</p>
+        <form onsubmit="event.preventDefault(); this.reset(); var modal = bootstrap.Modal.getInstance(document.getElementById('freeConsultationModal')); if (modal) modal.hide();">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label fw-semibold text-primary-navy" for="consultationName">Full Name</label>
+              <input class="form-control form-control-lg rounded-3" id="consultationName" placeholder="John Smith" type="text"/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-semibold text-primary-navy" for="consultationEmail">Email Address</label>
+              <input class="form-control form-control-lg rounded-3" id="consultationEmail" placeholder="john@clinic.com" type="email"/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-semibold text-primary-navy" for="consultationPhone">Phone Number</label>
+              <input class="form-control form-control-lg rounded-3" id="consultationPhone" placeholder="(555) 123-4567" type="tel"/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-semibold text-primary-navy" for="consultationPractice">Practice Name</label>
+              <input class="form-control form-control-lg rounded-3" id="consultationPractice" placeholder="Your clinic or practice" type="text"/>
+            </div>
+            <div class="col-12">
+              <label class="form-label fw-semibold text-primary-navy" for="consultationService">Service Interested In</label>
+              <select class="form-select form-select-lg rounded-3" id="consultationService">
+                <option selected="selected">Choose a service</option>
+                <option>Medical Billing</option>
+                <option>Prior Authorization</option>
+                <option>Denial Management</option>
+                <option>Credentialing</option>
+                <option>Ar Recovery</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label fw-semibold text-primary-navy" for="consultationMessage">Tell us about your goals</label>
+              <textarea class="form-control rounded-3" id="consultationMessage" placeholder="Tell us about your billing challenges, goals, or priorities." rows="4"></textarea>
+            </div>
+            <div class="col-12 d-flex justify-content-end mt-2">
+              <button class="btn btn-outline-secondary me-2 px-4" data-bs-dismiss="modal" type="button">Cancel</button>
+              <button class="btn btn-coral px-4 py-2 fw-semibold" type="submit">Request Consultation</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+</body></html>
