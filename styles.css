@@ -617,6 +617,11 @@ h6,
 }
 
 @media (max-width: 575.98px) {
+    .faq-section .accordion-button {
+        font-size: 1rem !important;
+        line-height: 1.3;
+    }
+
     .consultation-modal .modal-dialog {
         width: calc(100% - 1rem);
         margin: 0.5rem auto;
